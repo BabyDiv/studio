@@ -6,6 +6,7 @@ import Schedule from '@/components/Schedule';
 import Teachers from '@/components/Teachers';
 import Price from '@/components/Price';
 import Rent from '@/components/Rent';
+import Gallery from '@/components/Gallery';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <Teachers />
         <Price />
         <Rent />
+        <Gallery />
       </main>
       <Footer />
     </>

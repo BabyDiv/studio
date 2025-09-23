@@ -5,7 +5,7 @@ export default function Rent() {
         Аренда
       </h2>
 
-      <ul className="flex flex-col rent__list justify-between gap-[32px] list-none pl-[0px]">
+      <ul className="flex flex-col rent__list justify-between gap-[32px] list-none pl-[0px] m-[0px]">
         <li>         
           <article className="relative rent__article w-full overflow-hidden">
             <div className="p-[32px]">
