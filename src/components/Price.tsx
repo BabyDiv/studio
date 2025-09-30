@@ -1,11 +1,11 @@
 export default function Price() {
   return (   
-    <section className="price flex flex-col px-[8%] py-[2%]">
-      <h2 className="price__title text-[#5DBFD0] text-[48px] font-bold pb-[16px] text-center">
+    <section className="price flex flex-col px-[8%]">
+      <h2 className="price__title text-[#5DBFD0] text-[48px] font-bold text-center">
         Цены
       </h2>
 
-      <ul className="flex flex-col price__list--general justify-between gap-[32px] list-none pl-[0px]">
+      <ul className="flex flex-col price__list--general justify-between gap-[32px] m-[0px] list-none pl-[0px]">
         <li>         
           <article className="relative price__article w-full overflow-hidden">
             <div className="p-[32px]">
@@ -68,7 +68,7 @@ export default function Price() {
         <h3 className="text-[#5DBFD0] price__subscription text-[32px] font-bold mb-6 text-center">
           Взрослый абонемент
         </h3>
-        <ul className="flex flex-col price__list--adults justify-between gap-[32px] list-none pl-[0px]">
+        <ul className="flex flex-col price__list--adults justify-between gap-[32px] m-[0px] list-none pl-[0px]">
           <li>         
             <article className="relative price__article w-full overflow-hidden">
               <div className="p-[32px]">
@@ -144,7 +144,7 @@ export default function Price() {
         <h3 className="text-[#5DBFD0] price__subscription text-[32px] font-bold mb-6 text-center">
           Детский абонемент <span className="text-[#B0B0B0] text-sm">(до 15 лет)</span>
         </h3>
-        <ul className="flex flex-col price__list--children justify-between gap-[32px] list-none pl-[0px]">
+        <ul className="flex flex-col price__list--children justify-between gap-[32px] m-[0px] list-none pl-[0px]">
           <li>
             <article className="relative price__article w-full overflow-hidden">
               <div className="p-[32px]">

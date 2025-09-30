@@ -3,8 +3,8 @@ import Image from 'next/image';
 
 export default function Directions() {
   return (
-    <section className="directions flex flex-col px-[8%] py-[2%]">
-      <h2 className="directions__title text-[#5DBFD0] text-[48px] font-bold pb-[16px] text-center">
+    <section className="directions flex flex-col px-[8%]">
+      <h2 className="directions__title text-[#5DBFD0] text-[48px] font-bold text-center">
         Направления
       </h2>
       <ul className="flex flex-col directions__list justify-between gap-[32px] list-none pl-[0px]">

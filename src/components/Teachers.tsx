@@ -142,11 +142,11 @@ export default function Teachers() {
 
   return (
 
-    <section className="teachers relative z-20 w-full min-h-screen box-border bg-black text-white">
+    <section className="teachers relative z-20 w-full px-[0px] min-h-screen box-border bg-black text-white">
       <div className="absolute inset-0 bg-black opacity-60 z-10"></div>
 
       <div className={`teachers__content relative z-20 transition-all duration-2000 ease-in-out transform ${showContent ? 'translate-y-0 opacity-100' : '-translate-y-10 opacity-0'}`}>
-        <h1 className="teachers__title text-[#5DBFD0] text-[48px] font-bold pb-[16px] text-center">
+        <h1 className="teachers__title text-[#5DBFD0] text-[48px] font-bold text-center">
           Наши тренеры
         </h1>
 
@@ -176,9 +176,9 @@ export default function Teachers() {
                 <div className="absolute teachers__blackout inset-0 bg-black bg-opacity-50 z-10" />
 
                 <div className={`absolute right-[20px] top-1/2 transform z-20 flex flex-col justify-center items-end text-[#FFFFFF] text-right p-[8%] pb-[10%] transition-all duration-700 ease-out
-                    ${showContent ? 'translate-y-[-50%] opacity-100' : 'translate-y-[-70%] opacity-0'}`}
+                    ${showContent ? 'translate-y-[-50%] translate-x-[-5%] opacity-100' : 'translate-y-[-70%] opacity-0'}`}
                 >
-                  <h3 className="teachers__name text-[#5DBFD0] text-[48px] font-bold pb-[16px] m-[0]">{trainer.name}</h3>
+                  <h3 className="teachers__name text-[#5DBFD0] text-[48px] font-bold m-[0]">{trainer.name}</h3>
                   <button
                     onClick={() => handleOpenModal(trainer)}
                     className="mt-4 bg-transparent px-[49px] py-[4px] text-[18px] font-[600] cursor-pointer no-underline border-2 border-[#5DBFD0] 
@@ -223,8 +223,11 @@ export default function Teachers() {
       {/* Попап */}
       {selectedTrainer && (
         <>
-          <div className="fixed top-[100px] left-[0px] right-[0px] bg-[#2E2E2E] px-[3%] py-[2%] inset-0 z-[101] flex items-center justify-center">
-            <div className="relative w-screen h-screen overflow-y-auto p-8">
+
+          <div className="fixed inset-0 bg-[#000000] bg-opacity-10 z-[999]"></div>
+          {/* <div className="fixed top-[100px] left-[0px] right-[0px] bg-[#2E2E2E] px-[3%] py-[2%] inset-0 z-[101] flex items-center justify-center"> */}
+          <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#000000] border border-[#716F6F] border-[8px] py-[16px] z-[1000] max-w-[800px] w-[90%] h-[80vh] outline-none">
+            <div className="relative w-[90%] h-[90%] overflow-y-auto p-6 mx-auto">
               <button
                 onClick={handleCloseModal}
                 className="absolute top-[2%] right-[0px] w-[42px] h-[42px] p-[0] bg-transparent cursor-pointer border-none hover:text-[#FFFFFF] transition z-50"
@@ -245,7 +248,7 @@ export default function Teachers() {
               </svg>
               </button>
 
-              <div className="max-w-4xl mx-auto pt-20">
+              <div className="max-w-5xl mx-auto pt-20">
                 <h2 className="teachers__name text-[#5DBFD0] text-[48px] mt-[0]">
                   {selectedTrainer.name}
                 </h2>

@@ -1,5 +1,4 @@
 import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import Hero from '@/components/Hero';
 import Directions from '@/components/Directions';
 import Schedule from '@/components/Schedule';
@@ -7,6 +6,9 @@ import Teachers from '@/components/Teachers';
 import Price from '@/components/Price';
 import Rent from '@/components/Rent';
 import Gallery from '@/components/Gallery';
+import Reviews from '@/components/Reviews';
+import Questions from '@/components/Questions';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
@@ -20,8 +22,10 @@ export default function Home() {
         <Price />
         <Rent />
         <Gallery />
+        <Reviews />
+        <Questions />
+        <Footer />
       </main>
-      <Footer />
     </>
   )
 }

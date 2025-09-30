@@ -95,13 +95,13 @@ export default function Schedule() {
     //   </div>
     // </section>
 
-    <section className="schedule flex flex-col gap-[42px] px-[8%] py-[2%] max-w-4xl mx-auto">
+    <section className="schedule flex flex-col px-[8%] max-w-4xl mx-auto">
 
-      <h2 className="schedule__title text-[#5DBFD0] text-[48px] font-bold pb-[16px] text-center">
+      <h2 className="schedule__title text-[#5DBFD0] text-[48px] font-bold text-center">
         Расписание
-      </h2> 
+      </h2>
   {/* Таб-кнопки */}
-      <div className="flex flex-row schedule__tabs flex-nowrap justify-between w-full">
+      <div className="flex flex-row schedule__tabs flex-nowrap mb-[42px] justify-between w-full">
         {Object.keys(schedule).map(day => (
           <button
             key={day}
