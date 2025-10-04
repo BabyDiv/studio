@@ -181,10 +181,12 @@ export default function Teachers() {
                   <h3 className="teachers__name text-[#5DBFD0] text-[48px] font-bold m-[0]">{trainer.name}</h3>
                   <button
                     onClick={() => handleOpenModal(trainer)}
-                    className="mt-4 bg-transparent px-[49px] py-[4px] text-[18px] font-[600] cursor-pointer no-underline border-2 border-[#5DBFD0] 
+                    className="mt-4 bg-transparent button-radius px-[49px] py-[6px] text-[18px] font-[600] cursor-pointer no-underline border-2 border-[#5DBFD0] hover:rounded-none
                       relative overflow-hidden transition-all duration-700 ease-in-out"
                     style={{ 
                       background: 'none',
+                      transition: 'transition-all duration-1200 ease-in-out',
+
                     }}
                   >
                     <span
@@ -224,9 +226,15 @@ export default function Teachers() {
       {selectedTrainer && (
         <>
 
-          <div className="fixed inset-0 bg-[#000000] bg-opacity-10 z-[999]"></div>
-          {/* <div className="fixed top-[100px] left-[0px] right-[0px] bg-[#2E2E2E] px-[3%] py-[2%] inset-0 z-[101] flex items-center justify-center"> */}
-          <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#000000] border border-[#716F6F] border-[8px] py-[16px] z-[1000] max-w-[800px] w-[90%] h-[80vh] outline-none">
+          <div 
+            className="fixed inset-0 bg-[#000000] bg-opacity-10 z-[999] cursor-pointer"
+            onClick={handleCloseModal}
+          >
+          </div>
+          <div
+            className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#000000] border border-[#716F6F] border-[8px] py-[16px] z-[1000] max-w-[800px] w-[90%] h-[80vh] outline-none"
+            onClick={e => e.stopPropagation()}
+          >
             <div className="relative w-[90%] h-[90%] overflow-y-auto p-6 mx-auto">
               <button
                 onClick={handleCloseModal}

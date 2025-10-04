@@ -107,10 +107,11 @@ export default function Header() {
             href="https://wa.me/77000000000"
             target="_blank"
             rel="noopener noreferrer"
-            className={` mt-4 nav__subscribe bg-transparent px-[24px] py-[4px] text-[18px] font-[600] cursor-pointer no-underline border-2 border-[#5DBFD0] 
+            className={` mt-4 nav__subscribe button-radius bg-transparent px-[24px] py-[6px] text-[18px] font-[600] cursor-pointer no-underline border-2 border-[#5DBFD0] hover:rounded-none 
               relative overflow-hidden transition-all duration-700 ease-in-out ${menuOpen ? 'mt-[8px]' : 'mt-[0px]'} `}
             style={{ 
               background: 'none',
+              transition: 'transition-all duration-1200 ease-in-out',
             }}
           >
             <span

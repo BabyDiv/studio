@@ -86,7 +86,7 @@ export default function Questions() {
               {section.items.map((item, questionIndex) => (
                 <li key={questionIndex}>
                   <button
-                    className="w-full text-left bg-transparent flex justify-between items-center py-[18px] px-[0] bg-transparent border-none"
+                    className="w-full text-left bg-transparent flex justify-between items-center py-[18px] px-[0] cursor-pointer bg-transparent border-none"
                     onClick={() => toggleQuestion(sectionIndex, questionIndex)}
                   >
                     <p className="text-[#FFFFFF] text-[16px] m-[0]">{item.question}</p>
@@ -106,7 +106,7 @@ export default function Questions() {
                     </svg>
                   </button>
                   {openIndexes[sectionIndex] === questionIndex && (
-                    <p className="px-6 pb-4 questions__answer text-[#FFFFFF] text-[16px]">{item.answer}</p>
+                    <p className="px-6 pb-4 mt-[0] questions__answer text-[#FFFFFF] text-[16px]">{item.answer}</p>
                   )}
                 </li>
               ))}

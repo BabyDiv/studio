@@ -10,8 +10,8 @@ export default function Price() {
           <article className="relative price__article w-full overflow-hidden">
             <div className="p-[32px]">
               <h3 className="mt-[0px] text-[#FFFFFF] text-[18px]">Пробное занятие</h3>
-              <div className="price__text">
-                <div className="flex justify-between py-[6px] border-b border-b-[#B0B0B0]">
+              <div className="price__text text-[14px]">
+                <div className="flex justify-between py-[6px] border-b-[0.5px] border-b-[#B0B0B0]">
                   <span className="text-[#B0B0B0] font-[100]">1 пробное занятие</span>
                   <span className="text-[#5DBFD0]">3.000тг</span>
                 </div>
@@ -44,7 +44,7 @@ export default function Price() {
           <article className="relative price__article w-full overflow-hidden">
             <div className="p-[32px]">
               <h3 className="mt-[0px] text-[#FFFFFF] text-[18px]">Индивидуальные занятия</h3>
-              <div className="price__text">
+              <div className="price__text text-[14px]">
                 <div className="flex justify-between py-[6px] border-b-[0.5px] border-b-[#B0B0B0]">
                   <span className="text-[#B0B0B0] font-[100]">1 занятие (1-3 человека)</span>
                   <span className="text-[#5DBFD0]">15.000тг</span>
@@ -73,7 +73,7 @@ export default function Price() {
             <article className="relative price__article w-full overflow-hidden">
               <div className="p-[32px]">
                 <h4 className="mt-[0px] text-[#FFFFFF] text-[18px]">1 раз в неделю</h4>
-                <div className="price__text">
+                <div className="price__text text-[14px]">
                   <div className="flex justify-between py-[6px] border-b-[0.5px] border-b-[#B0B0B0]">
                     <span className="text-[#B0B0B0] font-[100]">4 занятия (1 час) - 1 месяц</span>
                     <span className="text-[#5DBFD0]">20.000тг</span>
@@ -91,7 +91,7 @@ export default function Price() {
             <article className="relative price__article w-full overflow-hidden">
               <div className="p-[32px]">
                 <h4 className="mt-[0px] text-[#FFFFFF] text-[18px]">2 раза в неделю</h4>
-                <div className="price__text">
+                <div className="price__text text-[14px]">
                   <div className="flex justify-between py-[6px] border-b-[0.5px] border-b-[#B0B0B0]">
                     <span className="text-[#B0B0B0] font-[100]">8 занятий - 1 месяц (1 заморозка в подарок)</span>
                     <span className="text-[#5DBFD0]">29.000тг</span>
@@ -116,7 +116,7 @@ export default function Price() {
             <article className="relative price__article w-full overflow-hidden">
               <div className="p-[32px]">
                 <h4 className="mt-[0px] text-[#FFFFFF] text-[18px]">3 раза в неделю</h4>
-                <div className="price__text">
+                <div className="price__text text-[14px]">
                   <div className="flex justify-between py-[6px] border-b-[0.5px] border-b-[#B0B0B0]">
                     <span className="text-[#B0B0B0] font-[100]">12 занятий - 1 месяц (1 заморозка в подарок)</span>
                     <span className="text-[#5DBFD0]">32.000тг</span>
@@ -149,13 +149,15 @@ export default function Price() {
             <article className="relative price__article w-full overflow-hidden">
               <div className="p-[32px]">
                 <h4 className="text-[#FFFFFF] text-[18px] mb-4">1 раз в неделю</h4>
-                <div className="flex justify-between py-[6px] border-b-[0.5px] border-b-[#B0B0B0]">
-                  <span className="text-[#B0B0B0] font-[100]">4 занятия (1 час) - 1 месяц</span>
-                  <span className="text-[#5DBFD0]">18.000тг</span>
-                </div>
-                <div className="flex justify-between py-[6px]">
-                  <span className="text-[#B0B0B0] font-[100]">4 занятия (1,5 часа) - 1 месяц</span>
-                  <span className="text-[#5DBFD0]">22.000тг</span>
+                <div className="price__text text-[14px]">
+                  <div className="flex justify-between py-[6px] border-b-[0.5px] border-b-[#B0B0B0]">
+                    <span className="text-[#B0B0B0] font-[100]">4 занятия (1 час) - 1 месяц</span>
+                    <span className="text-[#5DBFD0]">18.000тг</span>
+                  </div>
+                  <div className="flex justify-between py-[6px]">
+                    <span className="text-[#B0B0B0] font-[100]">4 занятия (1,5 часа) - 1 месяц</span>
+                    <span className="text-[#5DBFD0]">22.000тг</span>
+                  </div>
                 </div>
               </div>
             </article>
@@ -165,21 +167,23 @@ export default function Price() {
             <article className="relative price__article w-full overflow-hidden">
               <div className="p-[32px]">
                 <h4 className="text-[#FFFFFF] text-[18px] mb-4">2 раза в неделю</h4>
-                <div className="flex justify-between py-[6px] border-b-[0.5px] border-b-[#B0B0B0]">
-                  <span className="text-[#B0B0B0] font-[100]">8 занятий - 1 месяц (1 заморозка в подарок)</span>
-                  <span className="text-[#5DBFD0]">27.000тг</span>
-                </div>
-                <div className="flex justify-between py-[6px] border-b-[0.5px] border-b-[#B0B0B0]">
-                  <span className="text-[#B0B0B0] font-[100]">24 занятия - 3 месяца (3 заморозки в подарок)</span>
-                  <span className="text-[#5DBFD0]">68.000тг</span>
-                </div>
-                <div className="flex justify-between py-[6px] border-b-[0.5px] border-b-[#B0B0B0]">
-                  <span className="text-[#B0B0B0] font-[100]">48 занятий - 6 месяцев (6 заморозок в подарок)</span>
-                  <span className="text-[#5DBFD0]">138.000тг</span>
-                </div>
-                <div className="flex justify-between py-[6px]">
-                  <span className="text-[#B0B0B0] font-[100]">96 занятий - 12 месяцев (12 заморозок в подарок)</span>
-                  <span className="text-[#5DBFD0]">217.000тг</span>
+                <div className="price__text text-[14px]">
+                  <div className="flex justify-between py-[6px] border-b-[0.5px] border-b-[#B0B0B0]">
+                    <span className="text-[#B0B0B0] font-[100]">8 занятий - 1 месяц (1 заморозка в подарок)</span>
+                    <span className="text-[#5DBFD0]">27.000тг</span>
+                  </div>
+                  <div className="flex justify-between py-[6px] border-b-[0.5px] border-b-[#B0B0B0]">
+                    <span className="text-[#B0B0B0] font-[100]">24 занятия - 3 месяца (3 заморозки в подарок)</span>
+                    <span className="text-[#5DBFD0]">68.000тг</span>
+                  </div>
+                  <div className="flex justify-between py-[6px] border-b-[0.5px] border-b-[#B0B0B0]">
+                    <span className="text-[#B0B0B0] font-[100]">48 занятий - 6 месяцев (6 заморозок в подарок)</span>
+                    <span className="text-[#5DBFD0]">138.000тг</span>
+                  </div>
+                  <div className="flex justify-between py-[6px]">
+                    <span className="text-[#B0B0B0] font-[100]">96 занятий - 12 месяцев (12 заморозок в подарок)</span>
+                    <span className="text-[#5DBFD0]">217.000тг</span>
+                  </div>
                 </div>
               </div>
             </article>
@@ -189,21 +193,23 @@ export default function Price() {
             <article className="relative price__article w-full overflow-hidden">
               <div className="p-[32px]">
                 <h4 className="text-[#FFFFFF] text-[18px] mb-4">3 раза в неделю</h4>
-                <div className="flex justify-between py-[6px] border-b-[0.5px] border-b-[#B0B0B0]">
-                  <span className="text-[#B0B0B0] font-[100]">12 занятий - 1 месяц (1 заморозка в подарок)</span>
-                  <span className="text-[#5DBFD0]">30.000тг</span>
-                </div>
-                <div className="flex justify-between py-[6px] border-b-[0.5px] border-b-[#B0B0B0]">
-                  <span className="text-[#B0B0B0] font-[100]">36 занятий - 3 месяца (5 заморозок в подарок)</span>
-                  <span className="text-[#5DBFD0]">73.000тг</span>
-                </div>
-                <div className="flex justify-between py-[6px] border-b-[0.5px] border-b-[#B0B0B0]">
-                  <span className="text-[#B0B0B0] font-[100]">72 занятия - 6 месяцев (10 заморозок в подарок)</span>
-                  <span className="text-[#5DBFD0]">153.000тг</span>
-                </div>
-                <div className="flex justify-between py-[6px]">
-                  <span className="text-[#B0B0B0] font-[100]">144 занятий - 12 месяцев (20 заморозок в подарок)</span>
-                  <span className="text-[#5DBFD0]">225.000тг</span>
+                <div className="price__text text-[14px]">
+                  <div className="flex justify-between py-[6px] border-b-[0.5px] border-b-[#B0B0B0]">
+                    <span className="text-[#B0B0B0] font-[100]">12 занятий - 1 месяц (1 заморозка в подарок)</span>
+                    <span className="text-[#5DBFD0]">30.000тг</span>
+                  </div>
+                  <div className="flex justify-between py-[6px] border-b-[0.5px] border-b-[#B0B0B0]">
+                    <span className="text-[#B0B0B0] font-[100]">36 занятий - 3 месяца (5 заморозок в подарок)</span>
+                    <span className="text-[#5DBFD0]">73.000тг</span>
+                  </div>
+                  <div className="flex justify-between py-[6px] border-b-[0.5px] border-b-[#B0B0B0]">
+                    <span className="text-[#B0B0B0] font-[100]">72 занятия - 6 месяцев (10 заморозок в подарок)</span>
+                    <span className="text-[#5DBFD0]">153.000тг</span>
+                  </div>
+                  <div className="flex justify-between py-[6px]">
+                    <span className="text-[#B0B0B0] font-[100]">144 занятий - 12 месяцев (20 заморозок в подарок)</span>
+                    <span className="text-[#5DBFD0]">225.000тг</span>
+                  </div>
                 </div>
               </div>
             </article>
