@@ -127,14 +127,28 @@ export default function Header() {
                 transition: 'background-position 0.7s ease-in-out',
                 backgroundPosition: 'left',
               }}
+              // onMouseEnter={e => {
+              //   e.currentTarget.style.backgroundPosition = 'right';
+              //   e.currentTarget.parentElement.style.borderImage = 'linear-gradient(90deg, #66FFFF 0%, #5DBFD0 50%, #00E5FF 100%) 1';
+              //   e.currentTarget.parentElement.style.borderImageSlice = '1';
+              // }}
+              // onMouseLeave={e => {
+              //   e.currentTarget.style.backgroundPosition = 'left';
+              //   e.currentTarget.parentElement.style.borderImage = 'none';
+              // }}
+
               onMouseEnter={e => {
                 e.currentTarget.style.backgroundPosition = 'right';
-                e.currentTarget.parentElement.style.borderImage = 'linear-gradient(90deg, #66FFFF 0%, #5DBFD0 50%, #00E5FF 100%) 1';
-                e.currentTarget.parentElement.style.borderImageSlice = '1';
+                if (e.currentTarget.parentElement) {
+                  e.currentTarget.parentElement.style.borderImage = 'linear-gradient(90deg, #66FFFF 0%, #5DBFD0 50%, #00E5FF 100%) 1';
+                  e.currentTarget.parentElement.style.borderImageSlice = '1';
+                }
               }}
               onMouseLeave={e => {
                 e.currentTarget.style.backgroundPosition = 'left';
-                e.currentTarget.parentElement.style.borderImage = 'none';
+                if (e.currentTarget.parentElement) {
+                  e.currentTarget.parentElement.style.borderImage = 'none';
+                }
               }}
             >
               Записаться
