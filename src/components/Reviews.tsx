@@ -97,7 +97,7 @@ export default function Reviews() {
                       ))}
                     </div>
                     <h3 className="m-[0] text-center font-semibold">{review.name}</h3>
-                    <p className="text-center reviews__text m-[0] max-w-[140px]">"{review.text}"</p>
+                    <p className="text-center reviews__text m-[0] max-w-[140px]">&quot;{review.text}&quot;</p>
                   </div>
                 </SwiperSlide>
               ))}
