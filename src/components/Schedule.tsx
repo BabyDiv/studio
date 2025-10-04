@@ -1,7 +1,9 @@
 'use client';
 import { useState } from 'react';
 
-const schedule = {
+type Day = 'Пн' | 'Вт' | 'Ср' | 'Чт' | 'Пт' | 'Сб' | 'Вс';
+
+const schedule: Record<Day, string[]> = {
   Пн: [
     '10:00 Pole Sport (детская группа) — Илона',
     '11:00 Pole Sport (mix группа) — Илона',
@@ -62,38 +64,9 @@ export default function Schedule() {
 
   const days = Object.keys(schedule);
 
-  const [activeDay, setActiveDay] = useState(days[0]);
+  const [activeDay, setActiveDay] = useState<Day>('Пн');
 
   return (
-    // <section className="schedule px-[8%] py-[2%] max-w-4xl mx-auto">
-    //   <div className="flex flex-wrap justify-center gap-2 mb-6">
-    //     {days.map(day => (
-    //       <button
-    //         key={day}
-    //         onClick={() => setActiveDay(day)}
-    //         className={`px-4 py-2 rounded border transition-all duration-300
-    //           ${
-    //             activeDay === day
-    //               ? 'bg-[#5DBFD0] text-white border-[#5DBFD0]'
-    //               : 'bg-white text-black border-gray-300 hover:border-[#5DBFD0]'
-    //           }
-    //         `}
-    //       >
-    //         {day}
-    //       </button>
-    //     ))}
-    //   </div>
-
-    //   <div className="bg-white p-6 rounded shadow-md border border-gray-200">
-    //     <ul className="space-y-2 list-disc pl-6 text-[16px] text-gray-800">
-    //       {schedule[activeDay].length > 0 ? (
-    //         schedule[activeDay].map((item, index) => <li key={index}>{item}</li>)
-    //       ) : (
-    //         <li>Нет занятий</li>
-    //       )}
-    //     </ul>
-    //   </div>
-    // </section>
 
     <section className="schedule flex flex-col px-[8%] max-w-4xl mx-auto">
 
@@ -102,7 +75,7 @@ export default function Schedule() {
       </h2>
   {/* Таб-кнопки */}
       <div className="flex flex-row schedule__tabs flex-nowrap mb-[42px] justify-between w-full">
-        {Object.keys(schedule).map(day => (
+      {(Object.keys(schedule) as Day[]).map(day => (
           <button
             key={day}
             onClick={() => setActiveDay(day)}
