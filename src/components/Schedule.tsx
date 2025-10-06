@@ -79,7 +79,7 @@ export default function Schedule() {
           <button
             key={day}
             onClick={() => setActiveDay(day)}
-            className={`text-[18px] text-[#FFFFFF] whitespace-nowrap w-[15%] py-[12px] 
+            className={`text-[18px] text-[#FFFFFF] whitespace-nowrap text-center w-[15%] py-[12px] 
               transition-all duration-300
               focus:outline-none focus:ring-0 active:outline-none active:ring-0 border-none
               ${
