@@ -107,7 +107,7 @@ export default function Header() {
             href="https://wa.me/77000000000"
             target="_blank"
             rel="noopener noreferrer"
-            className={` mt-4 nav__subscribe button-radius bg-transparent px-[24px] py-[6px] text-[18px] font-[600] cursor-pointer no-underline border-2 border-[#5DBFD0] hover:rounded-none 
+            className={` mt-4 nav__subscribe button-radius bg-transparent px-[24px] py-[6px] text-[18px] font-[700] cursor-pointer no-underline border-2 border-[#5DBFD0] hover:rounded-none 
               relative overflow-hidden transition-all duration-700 ease-in-out ${menuOpen ? 'mt-[8px]' : 'mt-[0px]'} `}
             style={{ 
               background: 'none',
@@ -127,15 +127,6 @@ export default function Header() {
                 transition: 'background-position 0.7s ease-in-out',
                 backgroundPosition: 'left',
               }}
-              // onMouseEnter={e => {
-              //   e.currentTarget.style.backgroundPosition = 'right';
-              //   e.currentTarget.parentElement.style.borderImage = 'linear-gradient(90deg, #66FFFF 0%, #5DBFD0 50%, #00E5FF 100%) 1';
-              //   e.currentTarget.parentElement.style.borderImageSlice = '1';
-              // }}
-              // onMouseLeave={e => {
-              //   e.currentTarget.style.backgroundPosition = 'left';
-              //   e.currentTarget.parentElement.style.borderImage = 'none';
-              // }}
 
               onMouseEnter={e => {
                 e.currentTarget.style.backgroundPosition = 'right';

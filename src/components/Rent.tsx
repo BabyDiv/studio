@@ -19,7 +19,7 @@ export default function Rent() {
                   видеосъёмок и мероприятий. Профессиональное освещение, зеркала и качественное воздушное оборудование.
                 </div>
                 <div className="flex justify-between py-[6px]">
-                  <span className="text-[#B0B0B0] font-[100]">+ 4 человека</span>
+                  <span className="text-[#B0B0B0]">+ 4 человека</span>
                   <span className="text-[#5DBFD0]">Цена договорная</span>
                 </div>
               </div>
@@ -36,19 +36,19 @@ export default function Rent() {
               </div>
               <div className="rent__text text-[14px]">
                 <div className="flex justify-between py-[6px] text-[#B0B0B0] border-b-[0.5px] border-b-[#B0B0B0]">
-                  <span className="text-[#B0B0B0] font-[100]">Воздушное кольцо</span>
+                  <span className="text-[#B0B0B0]">Воздушное кольцо</span>
                   <span className="text-[#5DBFD0] text-right">Диаметр от 80 см до 1 м</span>
                 </div>
                 <div className="flex justify-between py-[6px] border-b-[0.5px] border-b-[#B0B0B0]">
-                  <span className="text-[#B0B0B0] font-[100]">Воздушное полотно</span>
+                  <span className="text-[#B0B0B0]">Воздушное полотно</span>
                   <span className="text-[#5DBFD0] text-right">Длина 6 м, габардин</span>
                 </div>
                 <div className="flex justify-between py-[6px] border-b-[0.5px] border-b-[#B0B0B0]">
-                  <span className="text-[#B0B0B0] font-[100]">Воздушный куб</span>
+                  <span className="text-[#B0B0B0]">Воздушный куб</span>
                   <span className="text-[#5DBFD0] text-right">Проф оборудование</span>
                 </div>
                 <div className="flex justify-between py-[6px]">
-                  <span className="text-[#B0B0B0] font-[100]">Воздушные петли</span>
+                  <span className="text-[#B0B0B0]">Воздушные петли</span>
                   <span className="text-[#5DBFD0] text-right">Для всех уровней подготовки</span>
                 </div>
               </div>

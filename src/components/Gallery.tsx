@@ -8,12 +8,6 @@ import Modal from 'react-modal';
 import { useKeenSlider } from 'keen-slider/react';
 import 'keen-slider/keen-slider.min.css';
 
-// const images = [
-//   "/bg-hero.jpg",
-//   "/bg-hero.jpg",
-//   "/teachers.jpg",
-// ];
-
 const galleries = [
   {
     cover: "/bg-hero.jpg",
@@ -80,32 +74,6 @@ export default function Gallery() {
         Галерея
       </h2>
 
-      {/* <ul className="flex flex-col gallery__list justify-between gap-[32px] list-none pl-[0px]">
-        {images.map((src, index) => (
-          <li key={index}
-            className="">
-            <button
-              onClick={() => openModal(index)}
-              className="w-full text-left bg-transparent border-none p-[0px]"
-            >
-              <article className="relative gallery__article w-full overflow-hidden">
-                <Image
-                  src={src}
-                  alt={`Image ${index + 1}`}
-                  width={400}
-                  height={200}
-                  className="object-cover w-full h-auto"
-                  priority={index < 2}
-                />
-                <h3 className="mt-[0px] p-[32px] text-[#FFFFFF] text-[18px]">Спортивный пилон 
-                  <span className="directions__name">(Pole Sport)</span>
-                </h3>
-              </article>
-            </button>
-          </li>
-        ))}
-      </ul> */}
-
       <ul className="flex flex-col gallery__list justify-between gap-[32px] list-none pl-[0px]">
         {galleries.map((gallery, index) => (
           <li key={index}>
@@ -154,22 +122,7 @@ export default function Gallery() {
         </button>
 
         <div className="relative">
-          {/* <div ref={sliderRef} className="keen-slider">
-            {images.map((src, index) => (
-              <div
-                key={index}
-                className="keen-slider__slide flex justify-center items-center"
-              >
-                <Image
-                  src={src}
-                  alt={`Слайд ${index + 1}`}
-                  width={800}
-                  height={500}
-                  className="object-cover rounded-md max-h-[80vh]"
-                />
-              </div>
-            ))}
-          </div> */}
+
           <div ref={sliderRef} className="keen-slider">
             {galleries[currentGalleryIndex].slides.map((src, index) => (
               <div key={index} className="keen-slider__slide flex justify-center items-center">

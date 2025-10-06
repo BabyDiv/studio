@@ -74,7 +74,7 @@ export default function Schedule() {
         Расписание
       </h2>
   {/* Таб-кнопки */}
-      <div className="flex flex-row schedule__tabs flex-nowrap mb-[42px] justify-between w-full">
+      <div className="flex flex-row schedule__tabs flex-nowrap mb-[42px] overflow-x-scroll justify-between w-full">
       {(Object.keys(schedule) as Day[]).map(day => (
           <button
             key={day}
@@ -131,7 +131,7 @@ export default function Schedule() {
                         rel="noopener noreferrer"
                         className="
                           mt-4
-                          text-[var(--background)] border border-[#5DBFD0] button-radius text-[18px] font-[600] px-[24px] py-[6px] cursor-pointer no-underline
+                          text-[var(--background)] border border-[#5DBFD0] button-radius text-[18px] font-[700] px-[24px] py-[6px] cursor-pointer no-underline
                           bg-[#5DBFD0]
                           transition-all duration-1200 ease-in-out shadow-lg
                           bg-[length:300%_100%] bg-left
@@ -204,7 +204,7 @@ export default function Schedule() {
                         rel="noopener noreferrer"
                         className="
                           block w-full text-center
-                          text-[var(--background)] border border-[#5DBFD0] button-radius text-[18px] font-[600] px-[24px] py-[6px] cursor-pointer no-underline
+                          text-[var(--background)] border border-[#5DBFD0] button-radius text-[18px] font-[700] px-[24px] py-[6px] cursor-pointer no-underline
                           bg-[#5DBFD0]
                           transition-all duration-1200 ease-in-out shadow-lg
                           bg-[length:300%_100%] bg-left
