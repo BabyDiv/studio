@@ -12,6 +12,7 @@ module.exports = {
     extend: {
       fontFamily: {
         lato: ['Lato', 'sans-serif'],
+        roboto: ['Roboto', 'sans-serif'],
         shelley: ['"Shelley Volante"', 'cursive'],
       },
     },
