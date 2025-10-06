@@ -47,7 +47,7 @@ export default function Reviews() {
   }, []);
 
   return (
-    <section className="reviews relative w-full box-border">
+    <section id="reviews" className="reviews relative w-full box-border">
       <h2 className="reviews__title text-[#5DBFD0] text-[48px] font-bold text-center py-12">
         Отзывы
       </h2>

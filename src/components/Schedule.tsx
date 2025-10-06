@@ -68,7 +68,7 @@ export default function Schedule() {
 
   return (
 
-    <section className="schedule flex flex-col px-[8%] max-w-4xl mx-auto">
+    <section id="schedule" className="schedule flex flex-col px-[8%] max-w-4xl mx-auto">
 
       <h2 className="schedule__title text-[#5DBFD0] text-[48px] font-bold text-center">
         Расписание
@@ -126,7 +126,7 @@ export default function Schedule() {
                     </div>
                     <div>
                       <a
-                        href="https://wa.me/77000000000"
+                        href="https://wa.me/77003334010"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="
@@ -199,7 +199,7 @@ export default function Schedule() {
                     {/* Кнопка */}
                     <div className="flex flex-1">
                       <a
-                        href="https://wa.me/77000000000"
+                        href="https://wa.me/77003334010"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="

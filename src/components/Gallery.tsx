@@ -69,7 +69,7 @@ export default function Gallery() {
   const nextSlide = () => instanceRef.current?.next();
 
   return (
-    <section className="gallery flex flex-col px-[8%]">
+    <section id="gallery" className="gallery flex flex-col px-[8%]">
       <h2 className="gallery__title text-[#5DBFD0] text-[48px] font-bold text-center">
         Галерея
       </h2>

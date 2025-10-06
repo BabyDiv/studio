@@ -1,6 +1,6 @@
 export default function Price() {
   return (   
-    <section className="price flex flex-col px-[8%]">
+    <section id="price" className="price flex flex-col px-[8%]">
       <h2 className="price__title text-[#5DBFD0] text-[48px] font-bold text-center">
         Цены
       </h2>

@@ -142,7 +142,7 @@ export default function Teachers() {
 
   return (
 
-    <section className="teachers relative z-20 w-full px-[0px] min-h-screen box-border bg-black text-white">
+    <section id="teachers" className="teachers relative z-20 w-full px-[0px] min-h-screen box-border bg-black text-white">
       <div className="absolute inset-0 bg-black opacity-60 z-10"></div>
 
       <div className={`teachers__content relative z-20 transition-all duration-2000 ease-in-out transform ${showContent ? 'translate-y-0 opacity-100' : '-translate-y-10 opacity-0'}`}>

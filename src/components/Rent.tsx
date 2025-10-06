@@ -1,6 +1,6 @@
 export default function Rent() {
   return (  
-    <section className="rent flex flex-col px-[8%]">
+    <section id="rent" className="rent flex flex-col px-[8%]">
       <h2 className="rent__title text-[#5DBFD0] text-[48px] font-bold text-center">
         Аренда
       </h2>

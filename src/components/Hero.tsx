@@ -12,7 +12,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="hero relative z-20 w-full h-[100vh] box-border px-[8%] py-[2%]">
+    <section id="hero" className="hero relative z-20 w-full h-[100vh] box-border px-[8%] py-[2%]">
       <Image
         src="/bg-hero.jpg"
         alt="Hero Background"
@@ -34,7 +34,7 @@ export default function Hero() {
         </p>
 
         <a
-          href="https://wa.me/77000000000"
+          href="https://wa.me/77003334010"
           target="_blank"
           rel="noopener noreferrer"
           className="

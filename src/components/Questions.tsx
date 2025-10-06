@@ -55,7 +55,7 @@ export default function Questions() {
   };
 
   return (
-    <section className="questions flex flex-col px-[8%]">
+    <section id="questions" className="questions flex flex-col px-[8%]">
       <h2 className="questions__title text-[#5DBFD0] text-[48px] font-bold text-center">
         Часто задаваемые вопросы
       </h2>

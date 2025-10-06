@@ -21,7 +21,7 @@ export default function Header() {
 
 
   return (
-    <header className={`header w-full fixed top-0 left-0 z-[100] box-border ${menuOpen ? 'px-[0] py-[0]' : 'px-[3%] py-[2%]'}`}>
+    <header id="header" className={`header w-full fixed top-0 left-0 z-[100] box-border ${menuOpen ? 'px-[0] py-[0]' : 'px-[3%] py-[2%]'}`}>
 
       {menuOpen && (
         <div
@@ -84,8 +84,8 @@ export default function Header() {
         >
 
           <nav className="flex nav flex-col items-center gap-[18px] p-[24px]">
-            <Link href="#hero" className="nav__item text-[18px] py-1 no-underline">Направления</Link>
-            <Link href="#services" className="nav__item text-[18px] py-1 no-underline">Расписание</Link>
+            <Link href="#directions" className="nav__item text-[18px] py-1 no-underline">Направления</Link>
+            <Link href="#schedule" className="nav__item text-[18px] py-1 no-underline">Расписание</Link>
             {/* <div className="relative group nav__item">
               <Link href="#services" className="text-[18px] py-1 text-[#FFFFFF] no-underline block">
                 Расписание
@@ -96,15 +96,15 @@ export default function Header() {
                 </Link>
               </div>
             </div> */}
-            <Link href="#gallery" className="nav__item text-[18px] py-1 no-underline">Цены</Link>
-            <Link href="#reviews" className="nav__item text-[18px] py-1 no-underline">Тренеры</Link>
-            <Link href="#galery" className="nav__item text-[18px] py-1 no-underline">Галерея</Link>
+            <Link href="#price" className="nav__item text-[18px] py-1 no-underline">Цены</Link>
+            <Link href="#teachers" className="nav__item text-[18px] py-1 no-underline">Тренеры</Link>
+            <Link href="#gallery" className="nav__item text-[18px] py-1 no-underline">Галерея</Link>
             {/* <Link href="#reviews" className="nav__item text-[18px] py-1 no-underline">Отзывы</Link> */}
-            <Link href="#contact" className="nav__item text-[18px] py-1 no-underline">Контакты</Link>
+            <Link href="#footer" className="nav__item text-[18px] py-1 no-underline">Контакты</Link>
           </nav>
 
           <a
-            href="https://wa.me/77000000000"
+            href="https://wa.me/77003334010"
             target="_blank"
             rel="noopener noreferrer"
             className={` mt-4 nav__subscribe button-radius bg-transparent px-[24px] py-[6px] text-[18px] font-[700] cursor-pointer no-underline border-2 border-[#5DBFD0] hover:rounded-none 
