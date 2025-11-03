@@ -28,9 +28,9 @@ export default function Hero() {
           Студия воздушной гимнастики
         </h1>
         <p className="hero__text text-[16px] text-[#FFFFFF] pb-[32px] m-[0]">
-          Prep students with love learning at our dance studio Prep students with love learning at our dance studio Prep students with love 
-          learning at our dance studio Prep students with love learning at our dance studio Prep students with love learning at our dance studio Prep students with love learning 
-          at our dance studio Prep students with love learning at our dance studio
+          Приглашаем вас в Kamila Kim Studio — место, где профессионализм встречается с вдохновением. 
+          Мы поможем вам найти невероятную силу и грацию в каждом движении, научиться летать и покорять высоту. 
+          Начните свое преображение с нами и почувствуйте абсолютную уверенность и свободу!
         </p>
 
         <a

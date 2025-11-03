@@ -10,16 +10,16 @@ const schedule: Record<Day, string[]> = {
     '12:00 Pole Exotic (взрослая группа) — Александра',
     '15:00 Pole Sport (детская группа) — Ева',
     '16:00 Pole Sport (продолжающая группа) — Ева',
-    '18:00 Pole Exotic (взрослая группа) — Дана',
-    '19:00 Pole Exotic (взрослая группа) — Дана',
-    '20:00 Pole Exotic (взрослая группа) — Камила',
+    '18:00 Pole Exotic (взрослая группа) — Камила',
+    '19:00 Pole Exotic (взрослая группа) — Камила',
+    '20:00 Pole Sport (начинающая группа) — Кристина',
   ],
   Вт: [
-    '09:30 Pole Sport (детская группа) — Камила',
+    '09:30 Pole Sport (детская группа) — Елизавета',
     '17:00 Pole Sport (детская группа) — Мария',
     '18:00 Pole Sport (mix группа) — Мария',
     '19:00 Pole Exotic (взрослая группа) — Мария',
-    '20:00 Pole Exotic / Pole Sport (взрослая группа) — Дана',
+    '20:00 Pole Exotic / Pole Sport (взрослая группа) — Илона',
   ],
   Ср: [
     '10:00 Pole Sport (детская группа) — Илона',
@@ -27,16 +27,16 @@ const schedule: Record<Day, string[]> = {
     '12:00 Pole Sport (взрослая группа) — Александра',
     '15:00 Aerial Sport (детская группа) — Ева',
     '16:00 Aerial Sport (продолжающая группа) — Ева',
-    '18:00 Pole Sport (взрослая группа) — Дана',
-    '19:00 Pole Sport (взрослая группа) — Дана',
-    '20:00 Pole Exotic (взрослая группа) — Камила',
+    '18:00 Pole Sport (взрослая группа) — Камила',
+    '19:00 Pole Sport (взрослая группа) — Камила',
+    '20:00 Pole Sport (начинающая группа) — Кристина',
   ],
   Чт: [
-    '09:30 Aerial Sport (детская группа) — Камила',
+    '09:30 Aerial Sport (детская группа) — Елизавета',
     '17:00 Aerial Sport (детская группа) — Мария',
     '18:00 Aerial Sport (mix группа) — Мария',
     '19:00 Aerial Sport (взрослая группа) — Мария',
-    '20:00 Aerial Sport (взрослая группа) — Дана',
+    '20:00 Aerial Sport (взрослая группа) — Илона',
   ],
   Пт: [
     '10:00 Aerial Sport (детская группа) — Илона',
@@ -44,9 +44,9 @@ const schedule: Record<Day, string[]> = {
     '12:00 Aerial Sport (взрослая группа) — Александра',
     '15:00 Aerial Sport (детская группа) — Ева',
     '16:00 Aerial Sport (продолжающая группа) — Ева',
-    '18:00 Aerial Sport (взрослая группа) — Дана',
-    '19:00 Aerial Sport (взрослая группа) — Дана',
-    '20:00 Aerial Sport (взрослая группа) — Камила',
+    '18:00 Aerial Sport (взрослая группа) — Камила',
+    '19:00 Aerial Sport (взрослая группа) — Камила',
+    '20:00 Aerial Sport (начинающая группа) — Кристина',
   ],
   Сб: [
     '10:00 Aerial Sport (детская группа) — Илона',
@@ -57,6 +57,7 @@ const schedule: Record<Day, string[]> = {
     '10:00 Aerial Sport (детская группа) — Илона',
     '11:30 Aerial Sport (mix группа) — Илона',
     '12:30 Aerial Sport (взрослая группа) — Илона',
+    '18:00 Pole Exotic (взрослая группа) — Алина',
   ],
 };
 
@@ -81,7 +82,7 @@ export default function Schedule() {
             onClick={() => setActiveDay(day)}
             className={`text-[18px] text-[#FFFFFF] whitespace-nowrap text-center w-[15%] py-[12px] 
               transition-all duration-300
-              focus:outline-none focus:ring-0 active:outline-none active:ring-0 border-none
+              focus:outline-none focus:ring-0 active:outline-none active:ring-0 hover:cursor-pointer border-none 
               ${
                 activeDay === day
                   ? 'bg-[#716F6F] text-white'

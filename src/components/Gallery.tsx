@@ -78,7 +78,7 @@ export default function Gallery() {
         {galleries.map((gallery, index) => (
           <li key={index}>
             <button onClick={() => openModal(index)} 
-              className="w-full text-left bg-transparent border-none"
+              className="w-full text-left bg-transparent hover:cursor-pointer border-none"
             >
               <article className="relative gallery__article w-full overflow-hidden">
                 <Image
