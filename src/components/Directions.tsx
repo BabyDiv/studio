@@ -19,14 +19,14 @@ export default function Directions() {
               priority
             />
             <div className="p-[32px]">
-              <h3 className="mt-[0px] text-[#FFFFFF] text-[18px]">Спортивный пилон <span className="directions__name">(Pole Sport)</span></h3>
+              <h3 className="mt-[0px] text-[#FFFFFF] text-[18px]">Aerial Sport</h3>
               <p className="directions__text text-[#B0B0B0]">
-              A graceful and dynamic discipline where you create figures and perform tricks using long silk sheets.
+                Занятия на воздушном кольце и полотнах, развивающие силу и гибкость воздухе.
               </p>
               <div className="flex flex-row gap-[2px] flex-wrap">
-                <span className="flex bg-[#716F6F] text-[#FFFFFF] text-[12px] px-[18px] py-[4px]">Grace</span>
-                <span className="flex bg-[#716F6F] text-[#FFFFFF] text-[12px] px-[18px] py-[4px]">Flexibility</span>
-                <span className="flex bg-[#716F6F] text-[#FFFFFF] text-[12px] px-[18px] py-[4px]">Health</span>
+                <span className="flex bg-[#716F6F] text-[#FFFFFF] text-[12px] px-[18px] py-[4px]">Грация</span>
+                <span className="flex bg-[#716F6F] text-[#FFFFFF] text-[12px] px-[18px] py-[4px]">Гибкость</span>
+                <span className="flex bg-[#716F6F] text-[#FFFFFF] text-[12px] px-[18px] py-[4px]">Выносливость</span>
               </div>
             </div>
           </article>
@@ -42,14 +42,14 @@ export default function Directions() {
               priority
             />
             <div className="p-[32px]">
-              <h3 className="mt-[0px] text-[#FFFFFF] text-[18px]">Спортивный пилон <span className="directions__name">(Pole Sport)</span></h3>
+              <h3 className="mt-[0px] text-[#FFFFFF] text-[18px]">Pole Sport</h3>
               <p className="directions__text text-[#B0B0B0]">
-              A graceful and dynamic discipline where you create figures and perform tricks using long silk sheets.
+                Спортивные тренировки на пилоне, направленные на развитие выносливости, силы и растяжки.
               </p>
               <div className="flex flex-row gap-[2px] flex-wrap">
-                <span className="flex bg-[#716F6F] text-[#FFFFFF] text-[12px] px-[18px] py-[4px]">Grace</span>
-                <span className="flex bg-[#716F6F] text-[#FFFFFF] text-[12px] px-[18px] py-[4px]">Flexibility</span>
-                <span className="flex bg-[#716F6F] text-[#FFFFFF] text-[12px] px-[18px] py-[4px]">Health</span>
+                <span className="flex bg-[#716F6F] text-[#FFFFFF] text-[12px] px-[18px] py-[4px]">Сила</span>
+                <span className="flex bg-[#716F6F] text-[#FFFFFF] text-[12px] px-[18px] py-[4px]">Энергия</span>
+                <span className="flex bg-[#716F6F] text-[#FFFFFF] text-[12px] px-[18px] py-[4px]">Движение</span>
               </div>
             </div>
           </article>
@@ -65,14 +65,14 @@ export default function Directions() {
               priority
             />
             <div className="p-[32px]">
-              <h3 className="mt-[0px] text-[#FFFFFF] text-[18px]">Спортивный пилон <span className="directions__name">(Pole Sport)</span></h3>
+              <h3 className="mt-[0px] text-[#FFFFFF] text-[18px]">Pole Exotic</h3>
               <p className="directions__text text-[#B0B0B0]">
-              A graceful and dynamic discipline where you create figures and perform tricks using long silk sheets.
+                Танцевальное направление на пилоне с акцентом на пластику, женственность и уверенность (только для взрослых).
               </p>
               <div className="flex flex-row gap-[2px] flex-wrap">
-                <span className="flex bg-[#716F6F] text-[#FFFFFF] text-[12px] px-[18px] py-[4px]">Grace</span>
-                <span className="flex bg-[#716F6F] text-[#FFFFFF] text-[12px] px-[18px] py-[4px]">Flexibility</span>
-                <span className="flex bg-[#716F6F] text-[#FFFFFF] text-[12px] px-[18px] py-[4px]">Health</span>
+                <span className="flex bg-[#716F6F] text-[#FFFFFF] text-[12px] px-[18px] py-[4px]">Самовыражение</span>
+                <span className="flex bg-[#716F6F] text-[#FFFFFF] text-[12px] px-[18px] py-[4px]">Свобода</span>
+                <span className="flex bg-[#716F6F] text-[#FFFFFF] text-[12px] px-[18px] py-[4px]">Творчество</span>
               </div>
             </div>
           </article>
