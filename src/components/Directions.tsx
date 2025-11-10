@@ -9,7 +9,7 @@ export default function Directions() {
       </h2>
       <ul className="flex flex-col directions__list justify-between gap-[32px] list-none pl-[0px]">
         <li>         
-          <article className="relative directions__article w-full overflow-hidden">
+          <article className="relative directions__article h-full overflow-hidden">
             <Image
               src="/bg-hero.jpg"
               alt="Pole Sport"
@@ -32,7 +32,7 @@ export default function Directions() {
           </article>
         </li>
         <li>
-          <article className="relative directions__article w-full overflow-hidden border">
+          <article className="relative directions__article h-full overflow-hidden border">
             <Image
               src="/bg-hero.jpg"
               alt="Pole Sport"
@@ -55,7 +55,7 @@ export default function Directions() {
           </article>
         </li>
         <li>
-          <article className="relative directions__article w-full overflow-hidden border">
+          <article className="relative directions__article h-full overflow-hidden border">
             <Image
               src="/bg-hero.jpg"
               alt="Pole Sport"
@@ -70,7 +70,7 @@ export default function Directions() {
                 Танцевальное направление на пилоне с акцентом на пластику, женственность и уверенность (только для взрослых).
               </p>
               <div className="flex flex-row gap-[2px] flex-wrap">
-                <span className="flex bg-[#716F6F] text-[#FFFFFF] text-[12px] px-[18px] py-[4px]">Самовыражение</span>
+                <span className="flex bg-[#716F6F] text-[#FFFFFF] text-[12px] px-[18px] py-[4px]">Уверенность</span>
                 <span className="flex bg-[#716F6F] text-[#FFFFFF] text-[12px] px-[18px] py-[4px]">Свобода</span>
                 <span className="flex bg-[#716F6F] text-[#FFFFFF] text-[12px] px-[18px] py-[4px]">Творчество</span>
               </div>

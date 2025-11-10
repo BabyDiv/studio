@@ -14,18 +14,23 @@ export default function Footer() {
           <li>
             <ul className="flex flex-col gap-[8px] pl-[0] list-none">
               <li>
-                <Link href="/" aria-label="Логотип" className="text-[#000000] flex flex-col align-start gap-[8px] no-underline">
+                <Link href="/" aria-label="Адрес" className="text-[#000000] flex flex-col align-start gap-[8px] no-underline">
                   <span>Улица Маметовой, 67226, офис, 2 этаж,</span>
                   <span> Алмалинский район, Алматы, 050004.</span>
                 </Link>
               </li>
               <li>
-                <Link href="/" aria-label="Логотип" className="text-[#000000] no-underline">
+                <Link href="/" aria-label="Номер телефона" className="text-[#000000] no-underline">
                   <span className="break-words">+7‒700‒333‒40‒10</span>
                 </Link>
               </li>
               <li>
-                <Link href="/" aria-label="Логотип" className="flex flex-wrap text-[#000000] no-underline">
+                <Link href="/" aria-label="Номер телефона" className="text-[#000000] no-underline">
+                  <span className="break-words">+7‒775‒835‒56‒13</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/" aria-label="Почта" className="flex flex-wrap text-[#000000] no-underline">
                   <span className="break-all">info@kamilakimstudio.com</span>
                 </Link>
               </li>

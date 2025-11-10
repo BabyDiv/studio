@@ -318,12 +318,19 @@ body {
   margin: 0;
 }
 
-.directions__list,
+.directions__list {
+  @media(min-width: 1064px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .gallery__list {
   @media(min-width: 1064px) {
     flex-direction: row;
   }
 }
+
 .directions__article,
 .price__article,
 .rent__article,
