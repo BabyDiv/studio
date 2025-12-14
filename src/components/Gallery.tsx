@@ -10,33 +10,54 @@ import 'keen-slider/keen-slider.min.css';
 
 const galleries = [
   {
-    cover: "/bg-hero.jpg",
+    title: "Воздушная гимнастика",
+    subtitle: "(Aerial Sport)",
+    cover: "/directions-silks.jpg",
     slides: [
-      "/1.jpg",
-      "/2.jpg",
-      "/3.jpg",
-      "/4.jpg",
-      "/5.jpg",
+      "/aerial-sport-1.jpg",
+      "/aerial-sport-2.jpg",
+      "/aerial-sport-3.jpg",
+      "/aerial-sport-4.jpg",
+      "/aerial-sport-5.jpg",
+      "/aerial-sport-6.jpg",
+      "/aerial-sport-7.jpg",
+      "/aerial-sport-8.jpg",
     ],
   },
   {
-    cover: "/bg-hero.jpg",
+    title: "Спортивный пилон",
+    subtitle: "(Pole Sport)",
+    cover: "/directions-pole-sport.jpg",
     slides: [
-      "/6.jpg",
-      "/7.jpg",
-      "/8.jpg",
-      "/9.jpg",
-      "/10.jpg",
+      "/pole-sport-1.jpg",
+      "/pole-sport-2.jpg",
+      "/pole-sport-3.jpg",
+      "/pole-sport-4.jpg",
+      "/pole-sport-5.jpg",
+      "/pole-sport-6.jpg",
+      "/pole-sport-7.jpg",
+      "/pole-sport-8.jpg",
+      "/pole-sport-9.jpg",
+      "/pole-sport-10.jpg",
+      "/pole-sport-11.jpg",
     ],
   },
   {
-    cover: "/teachers.jpg",
+    title: "Экзотик пилон",
+    subtitle: "(Pole Exotic)",
+    cover: "/directions-pole-exotic.jpg",
     slides: [
-      "/11.jpg",
-      "/12.jpg",
-      "/13.jpg",
-      "/14.jpg",
-      "/15.jpg",
+      "/pole-exotic-1.jpg",
+      "/pole-exotic-2.jpg",
+      "/pole-exotic-3.jpg",
+      "/pole-exotic-4.jpg",
+      "/pole-exotic-5.jpg",
+      "/pole-exotic-6.jpg",
+      "/pole-exotic-7.jpg",
+      "/pole-exotic-8.jpg",
+      "/pole-exotic-9.jpg",
+      "/pole-exotic-10.jpg",
+      "/pole-exotic-11.jpg",
     ],
   },
 ];
@@ -80,18 +101,23 @@ export default function Gallery() {
             <button onClick={() => openModal(index)} 
               className="w-full text-left bg-transparent hover:cursor-pointer border-none"
             >
-              <article className="relative gallery__article w-full overflow-hidden">
-                <Image
-                  src={gallery.cover}
-                  alt={`Галерея ${index + 1}`}
-                  width={400}
-                  height={200}
-                  className="object-cover w-full h-auto"
-                  priority={index < 2}
-                />
-                <h3 className="mt-[0px] p-[32px] text-[#FFFFFF] text-[18px]">
-                  Спортивный пилон 
-                  <span className="directions__name">(Pole Sport)</span>
+              <article className="relative gallery__article w-full overflow-hidden flex flex-col">
+                {/* <div className="gallery__blackout"></div> */}
+                <div className="relative w-full aspect-[16/11]">
+                  <div className="gallery__blackout"></div>
+                  <Image
+                    src={gallery.cover}
+                    alt={`Галерея ${index + 1}`}
+                    width={400}
+                    height={200}
+                    className="object-cover w-full h-full"
+                    priority={index < 2}
+                  />
+                </div>
+                
+                <h3 className="gallery__article-title mt-[0px] p-[32px] text-[#FFFFFF] text-[18px]">
+                  {gallery.title}{" "}
+                  <span className="directions__name">{gallery.subtitle}</span>
                 </h3>
               </article>
             </button>
@@ -103,7 +129,7 @@ export default function Gallery() {
         isOpen={modalOpen}
         onRequestClose={closeModal}
         contentLabel="Просмотр изображений"
-        className="modal"
+        className="modal__gallery"
         overlayClassName="overlay"
         ariaHideApp={false}
       >
@@ -126,13 +152,23 @@ export default function Gallery() {
           <div ref={sliderRef} className="keen-slider">
             {galleries[currentGalleryIndex].slides.map((src, index) => (
               <div key={index} className="keen-slider__slide flex justify-center items-center">
-                <Image
+                {/* <Image
                   src={src}
                   alt={`Слайд ${index + 1}`}
                   width={800}
                   height={500}
                   className="object-cover rounded-md max-h-[80vh]"
-                />
+                /> */}
+                  <div className="relative h-[80vh] aspect-[3/4]">
+                    <Image
+                      src={src}
+                      alt={`Слайд ${index + 1}`}
+                      fill
+                      className="object-contain rounded-md"
+                      sizes="(max-width: 768px) 90vw, 60vw"
+                      priority={index === 0}
+                    />
+                  </div>
               </div>
             ))}
           </div>

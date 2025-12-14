@@ -17,7 +17,7 @@ type Trainer = {
 const trainers: Trainer[] = [
   {
     name: "Ким Камила",
-    image: "/teachers.jpg",
+    image: "/teachers-kamila.png",
     description: `Основатель студии, тренер с опытом работы более 10 лет.
 
       Образование:
@@ -41,7 +41,7 @@ const trainers: Trainer[] = [
   },
   {
     name: "Шаравина Мария",
-    image: "/teachers.jpg",
+    image: "/teachers-maria.jpg",
     description: `Генеральный директор ОФ «Federation Pole Sport Kazakhstan». 10 лет опыта.
 
       Образование:
@@ -70,7 +70,7 @@ const trainers: Trainer[] = [
   },
   {
     name: "Уразбаева Александра",
-    image: "/teachers.jpg",
+    image: "/teachers-alexandra.jpg",
     description: `Тренер и действующая спортсменка Казахстанской Федерации по бодибилдингу и фитнесу.
       Стаж — 12 лет.
 
@@ -90,7 +90,7 @@ const trainers: Trainer[] = [
   },
   {
     name: "Толстых Илона",
-    image: "/teachers.jpg",
+    image: "/directions-pole-sport.jpg",
     description: `Тренер с опытом работы — 6 лет.
 
       Достижения:
@@ -120,7 +120,7 @@ const trainers: Trainer[] = [
   },
   {
     name: "Федюнина Елизавета",
-    image: "/teachers.jpg",
+    image: "/teachers-elizabeth.jpg",
     description: `Елизавета — опытный тренер по Pole Dance (Sport) и Aerial Hoop с более чем 5-летним стажем 
     в сфере воздушных и пилонных направлений. В прошлом занималась акробатикой, что помогло ей выстроить сильную техническую базу 
     и развить выразительность движений.
@@ -204,10 +204,21 @@ export default function Teachers() {
                   src={trainer.image}
                   alt={trainer.name}
                   layout="fill"
-                  objectFit="cover"
                   priority
-                  className="z-0"
+                  className="z-0 object-cover"
                 />
+
+                {/* <div className="relative h-full flex items-center justify-center">
+                  <div className="relative aspect-[14/16] h-[85%]">
+                    <Image
+                      src={trainer.image}
+                      alt={trainer.name}
+                      fill
+                      className="object-contain"
+                      priority
+                    />
+                  </div>
+                </div> */}
 
                 <div className="absolute teachers__blackout inset-0 bg-black bg-opacity-50 z-10" />
 

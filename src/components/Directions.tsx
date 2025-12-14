@@ -10,14 +10,15 @@ export default function Directions() {
       <ul className="flex flex-col directions__list justify-between gap-[32px] list-none pl-[0px]">
         <li>         
           <article className="relative directions__article h-full overflow-hidden">
-            <Image
-              src="/bg-hero.jpg"
-              alt="Pole Sport"
-              width={400}
-              height={200}
-              className="object-cover w-full h-auto"
-              priority
-            />
+            <div className="relative w-full aspect-[16/11]">
+              <div className="directions__blackout"></div>
+              <Image
+                src="/directions-silks.jpg"
+                alt="Silks"
+                fill
+                className="object-cover"
+              />
+            </div>
             <div className="p-[32px]">
               <h3 className="mt-[0px] text-[#FFFFFF] text-[18px]">Aerial Sport</h3>
               <p className="directions__text text-[#B0B0B0]">
@@ -33,14 +34,15 @@ export default function Directions() {
         </li>
         <li>
           <article className="relative directions__article h-full overflow-hidden border">
-            <Image
-              src="/bg-hero.jpg"
-              alt="Pole Sport"
-              width={400}
-              height={200}
-              className="object-cover w-full h-auto"
-              priority
-            />
+            <div className="relative w-full aspect-[16/11]">
+              <div className="directions__blackout"></div>
+              <Image
+                src="/directions-pole-sport.jpg"
+                alt="Pole Sport"
+                fill
+                className="object-cover"
+              />
+            </div>
             <div className="p-[32px]">
               <h3 className="mt-[0px] text-[#FFFFFF] text-[18px]">Pole Sport</h3>
               <p className="directions__text text-[#B0B0B0]">
@@ -56,14 +58,15 @@ export default function Directions() {
         </li>
         <li>
           <article className="relative directions__article h-full overflow-hidden border">
-            <Image
-              src="/bg-hero.jpg"
-              alt="Pole Sport"
-              width={400}
-              height={200}
-              className="object-cover w-full h-auto"
-              priority
-            />
+            <div className="relative w-full aspect-[16/11]">
+              <div className="directions__blackout"></div>
+              <Image
+                src="/directions-pole-exotic.jpg"
+                alt="Pole Sport"
+                fill
+                className="object-cover"
+              />
+            </div>
             <div className="p-[32px]">
               <h3 className="mt-[0px] text-[#FFFFFF] text-[18px]">Pole Exotic</h3>
               <p className="directions__text text-[#B0B0B0]">
