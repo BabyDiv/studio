@@ -255,7 +255,7 @@ body {
 }
 
 .hero__content {
-  @media(min-width: 1064px) {
+  @media(min-width: 768px) {
     width: 50%;
   }
 }
@@ -547,6 +547,14 @@ body {
     max-width: 520px;
   }
 }
+
+@media (min-width: 768px) {
+  .keen-slider__image {
+    object-fit: cover;
+  }
+}
+
+.keen-slider__image
 
 .overlay {
   position: fixed;

@@ -14,11 +14,9 @@ const galleries = [
     subtitle: "(Aerial Sport)",
     cover: "/directions-silks.jpg",
     slides: [
-      "/aerial-sport-1.jpg",
       "/aerial-sport-2.jpg",
       "/aerial-sport-3.jpg",
       "/aerial-sport-4.jpg",
-      "/aerial-sport-5.jpg",
       "/aerial-sport-6.jpg",
       "/aerial-sport-7.jpg",
       "/aerial-sport-8.jpg",
@@ -95,14 +93,13 @@ export default function Gallery() {
         Галерея
       </h2>
 
-      <ul className="flex flex-col gallery__list justify-between gap-[32px] list-none pl-[0px]">
+      <ul className="flex flex-col gallery__list justify-between gap-[32px] w-full list-none pl-[0px]">
         {galleries.map((gallery, index) => (
-          <li key={index}>
+          <li key={index} className="w-full ">
             <button onClick={() => openModal(index)} 
               className="w-full text-left bg-transparent hover:cursor-pointer border-none"
             >
               <article className="relative gallery__article w-full overflow-hidden flex flex-col">
-                {/* <div className="gallery__blackout"></div> */}
                 <div className="relative w-full aspect-[16/11]">
                   <div className="gallery__blackout"></div>
                   <Image
@@ -135,7 +132,7 @@ export default function Gallery() {
       >
         <button
           onClick={closeModal}
-          className="absolute top-[20px] right-[26px] w-[42px] h-[42px] p-[0] text-[#FFFFFF] cursor-pointer border-none bg-transparent text-2xl font-bold z-10 absolute transition z-50"
+          className="absolute top-[20px] right-[16px] w-[42px] h-[42px] p-[0] text-[#FFFFFF] cursor-pointer border-none bg-transparent text-2xl font-bold z-10 absolute transition z-50"
         >
           <svg xmlns="http://www.w3.org/2000/svg" className="stroke-white transition-all duration-400 ease-in-out" viewBox="0 0 42 42" fill="none">
             <path
@@ -151,42 +148,60 @@ export default function Gallery() {
 
           <div ref={sliderRef} className="keen-slider">
             {galleries[currentGalleryIndex].slides.map((src, index) => (
+              // <div key={index} className="keen-slider__slide flex justify-center items-center">
+              //     <div className="relative h-[80vh] aspect-[3/4]">
+              //       <Image
+              //         src={src}
+              //         alt={`Слайд ${index + 1}`}
+              //         fill
+              //         className="object-cover rounded-md"
+              //         sizes="(max-width: 768px) 90vw, 60vw"
+              //         priority={index === 0}
+              //       />
+              //     </div>
+              // </div>
               <div key={index} className="keen-slider__slide flex justify-center items-center">
-                {/* <Image
-                  src={src}
-                  alt={`Слайд ${index + 1}`}
-                  width={800}
-                  height={500}
-                  className="object-cover rounded-md max-h-[80vh]"
-                /> */}
-                  <div className="relative h-[80vh] aspect-[3/4]">
+                <div className="bg-gray-800 p-4 rounded-md">
+                  <div className="relative max-w-[100vw] h-[80vh] aspect-[3/4]">
                     <Image
                       src={src}
                       alt={`Слайд ${index + 1}`}
                       fill
-                      className="object-cover rounded-md"
+                      className="keen-slider__image object-contain md:object-cover"
                       sizes="(max-width: 768px) 90vw, 60vw"
                       priority={index === 0}
                     />
                   </div>
+                </div>
               </div>
             ))}
           </div>
 
           <button
             onClick={prevSlide}
-            className="absolute swiper-button-prev flex left-[0] top-1/2 -translate-y-1/2 bg-transparent text-[#FFFFFF] border-none"
+            className="absolute left-[0] top-1/2 -translate-y-1/2 w-[32px] h-[42px] flex justify-center items-center bg-transparent border-none cursor-pointer"
           >
-            <svg className="swiper-navigation-icon" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M10.617 20.076a.696.696 0 0 0 0-.982L1.802 10.28l8.815-8.815a.695.695 0 0 0-.982-.982l-9.07 9.07a1.029 1.029 0 0 0 0 1.454l9.07 9.07a.694.694 0 0 0 .982-.001Z" fill="currentColor"/>
+            <svg
+              className="w-full h-full text-white"
+              viewBox="0 0 11 20"
+              fill="white"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M10.617 20.076a.696.696 0 0 0 0-.982L1.802 10.28l8.815-8.815a.695.695 0 0 0-.982-.982l-9.07 9.07a1.029 1.029 0 0 0 0 1.454l9.07 9.07a.694.694 0 0 0 .982-.001Z" />
             </svg>
           </button>
+
           <button
             onClick={nextSlide}
-            className="absolute swiper-button-next flex right-[0] top-1/2 -translate-y-1/2 bg-transparent text-[#FFFFFF] border-none"
+            className="absolute right-[0] top-1/2 -translate-y-1/2 w-[32px] h-[42px] flex justify-center items-center bg-transparent border-none cursor-pointer"
           >
-            <svg className="swiper-navigation-icon" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0.38296 20.0762C0.111788 19.805 0.111788 19.3654 0.38296 19.0942L9.19758 10.2796L0.38296 1.46497C0.111788 1.19379 0.111788 0.754138 0.38296 0.482966C0.654131 0.211794 1.09379 0.211794 1.36496 0.482966L10.4341 9.55214C10.8359 9.9539 10.8359 10.6053 10.4341 11.007L1.36496 20.0762C1.09379 20.3474 0.654131 20.3474 0.38296 20.0762Z" fill="currentColor">
+            <svg
+              className="w-full h-full text-white"
+              viewBox="0 0 11 20"
+              fill="white"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M0.38296 20.0762C0.111788 19.805 0.111788 19.3654 0.38296 19.0942L9.19758 10.2796L0.38296 1.46497C0.111788 1.19379 0.111788 0.754138 0.38296 0.482966C0.654131 0.211794 1.09379 0.211794 1.36496 0.482966L10.4341 9.55214C10.8359 9.9539 10.8359 10.6053 10.4341 11.007L1.36496 20.0762C1.09379 20.3474 0.654131 20.3474 0.38296 20.0762Z">
               </path>
             </svg>
           </button>
