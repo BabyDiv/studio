@@ -295,7 +295,6 @@ export default function Teachers() {
 
       </div>
 
-      {/* Попап */}
       {selectedTrainer && (
         <>
 

@@ -71,8 +71,8 @@ export default function Schedule() {
       <h2 className="schedule__title text-[#5DBFD0] text-[48px] font-bold text-center">
         Расписание
       </h2>
-  {/* Таб-кнопки */}
-      <div className="flex flex-row schedule__tabs flex-nowrap mb-[42px] overflow-x-scroll justify-between w-full">
+
+      <div className="flex flex-row schedule__tabs flex-nowrap mb-[42px] overflow-x-auto w-full">
       {(Object.keys(schedule) as Day[]).map(day => (
           <button
             key={day}
@@ -92,7 +92,6 @@ export default function Schedule() {
         ))}
       </div>
 
-  {/* Контент выбранного дня */}
       <div className="bg-white">
         {schedule[activeDay].length > 0 ? (
           <div className="space-y-4 flex flex-col gap-[16px]">
@@ -146,9 +145,7 @@ export default function Schedule() {
                   <div
                     className="flex flex-col mobile-screen justify-between px-[24px] py-[18px] border border-[#716F6F]"
                   >
-                    {/* Время + Тренер (мобилка: в одной строке, тренер справа) */}
                     <div className="flex justify-between items-center mb-2">
-                      {/* Время */}
                       <div className="flex items-center gap-[4px]">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -167,8 +164,7 @@ export default function Schedule() {
                         </svg>
                         <span className="font-medium min-w-[60px] text-[#FFFFFF]">{time}</span>
                       </div>
-                
-                      {/* Тренер */}
+                      
                       <div className="flex items-center gap-[4px]">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -189,12 +185,10 @@ export default function Schedule() {
                       </div>
                     </div>
                 
-                    {/* Название занятия */}
                     <div className="flex text-left">
                       <span className="text-[#FFFFFF]">{title}</span>
                     </div>
                 
-                    {/* Кнопка */}
                     <div className="flex flex-1">
                       <a
                         href="https://wa.me/77003334010"
