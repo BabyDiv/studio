@@ -179,7 +179,7 @@ export default function Teachers() {
   return (
 
     <section id="teachers" className="teachers relative z-20 w-full px-[0px] min-h-screen box-border bg-black text-white">
-      <div className="absolute inset-0 bg-black opacity-60 z-10"></div>
+      {/* <div className="absolute inset-0 bg-black opacity-60 z-10"></div> */}
 
       <div className={`teachers__content relative z-20 transition-all duration-2000 ease-in-out transform ${showContent ? 'translate-y-0 opacity-100' : '-translate-y-10 opacity-0'}`}>
         <h1 className="teachers__title text-[#5DBFD0] text-[48px] font-bold text-center">
@@ -200,13 +200,34 @@ export default function Teachers() {
                 className="relative w-screen h-screen overflow-hidden"
               >
 
-                <Image
-                  src={trainer.image}
-                  alt={trainer.name}
-                  layout="fill"
-                  priority
-                  className="z-0 object-cover"
-                />
+                <div className="">
+                  <Image
+                    src={trainer.image}
+                    alt={trainer.name}
+                    layout="fill"
+                    priority
+                    className="
+                    reviews__image-bg
+                      object-cover
+                      scale-150
+                      blur-3xl
+                      brightness-50
+                      saturate-50
+                    "
+                  />
+                </div>
+
+                <div className="relative z-10 h-full flex items-center justify-center">
+                  <div className="relative h-[80%] max-w-[1200px] w-full aspect-[2/3]">
+                    <Image
+                      src={trainer.image}
+                      alt={trainer.name}
+                      layout="fill"
+                      priority
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
 
                 {/* <div className="relative h-full flex items-center justify-center">
                   <div className="relative aspect-[14/16] h-[85%]">
@@ -220,7 +241,7 @@ export default function Teachers() {
                   </div>
                 </div> */}
 
-                <div className="absolute teachers__blackout inset-0 bg-black bg-opacity-50 z-10" />
+                <div className="absolute teachers__blackout inset-0 bg-black bg-opacity-50 z-20" />
 
                 <div className={`absolute right-[20px] top-1/2 transform z-20 flex flex-col justify-center items-end text-[#FFFFFF] text-right p-[8%] pb-[10%] transition-all duration-700 ease-out
                     ${showContent ? 'translate-y-[-50%] translate-x-[-5%] opacity-100' : 'translate-y-[-70%] opacity-0'}`}
@@ -309,7 +330,7 @@ export default function Teachers() {
               </button>
 
               <div className="max-w-5xl mx-auto pt-20">
-                <h2 className="teachers__name text-[#5DBFD0] text-[48px] mt-[0]">
+                <h2 className="teachers__name text-[#5DBFD0] text-[32px] mt-[0]">
                   {selectedTrainer.name}
                 </h2>
                 <div className="text-[#FFFFFF] font-[100]">

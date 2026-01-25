@@ -315,6 +315,9 @@ body {
   .reviews__content {
     height: 40vh;
   }
+  .reviews__image {
+    object-fit: contain;
+  }
 }
 
 .hero__subscribe,

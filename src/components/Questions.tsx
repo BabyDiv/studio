@@ -69,9 +69,11 @@ export default function Questions() {
         {faqSections.map((section, sectionIndex) => (
           <div key={sectionIndex}>
             <div className="flex items-center gap-[8px] mb-4">
+              <div className="w-[24px] h-[24px]">
               <svg width="800px" height="800px" viewBox="0 0 24 24" className="w-[24px] h-[24px] fill-[#5DBFD0]" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12 3C7.04 3 3 7.04 3 12C3 16.96 7.04 21 12 21C16.96 21 21 16.96 21 12C21 7.04 16.96 3 12 3ZM12 19.5C7.86 19.5 4.5 16.14 4.5 12C4.5 7.86 7.86 4.5 12 4.5C16.14 4.5 19.5 7.86 19.5 12C19.5 16.14 16.14 19.5 12 19.5ZM14.3 7.7C14.91 8.31 15.25 9.13 15.25 10C15.25 10.87 14.91 11.68 14.3 12.3C13.87 12.73 13.33 13.03 12.75 13.16V13.5C12.75 13.91 12.41 14.25 12 14.25C11.59 14.25 11.25 13.91 11.25 13.5V12.5C11.25 12.09 11.59 11.75 12 11.75C12.47 11.75 12.91 11.57 13.24 11.24C13.57 10.91 13.75 10.47 13.75 10C13.75 9.53 13.57 9.09 13.24 8.76C12.58 8.1 11.43 8.1 10.77 8.76C10.44 9.09 10.26 9.53 10.26 10C10.26 10.41 9.92 10.75 9.51 10.75C9.1 10.75 8.76 10.41 8.76 10C8.76 9.13 9.1 8.32 9.71 7.7C10.94 6.47 13.08 6.47 14.31 7.7H14.3ZM13 16.25C13 16.8 12.55 17.25 12 17.25C11.45 17.25 11 16.8 11 16.25C11 15.7 11.45 15.25 12 15.25C12.55 15.25 13 15.7 13 16.25Z" fill="#5DBFD0"/>
               </svg>
+              </div>
               <h3 className="text-[#5DBFD0] text-xl text-[32px] font-semibold">{section.title}</h3>
             </div>
 
@@ -83,20 +85,22 @@ export default function Questions() {
                     onClick={() => toggleQuestion(sectionIndex, questionIndex)}
                   >
                     <p className="text-[#FFFFFF] text-[16px] m-[0]">{item.question}</p>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="[#FFFFFF]"
-                      className={`w-[24px] h-[24px] fill-[#716F6F] shrink-0 transition-transform duration-300 ${
-                        openIndexes[sectionIndex] === questionIndex ? 'rotate-180' : ''
-                      }`}
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
+                    <div className="w-[24px] h-[24px] flex-none">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="[#FFFFFF]"
+                        className={`w-[24px] h-[24px] flex-none fill-[#716F6F] transition-transform duration-300 ${
+                          openIndexes[sectionIndex] === questionIndex ? 'rotate-180' : ''
+                        }`}
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                    </div>
                   </button>
                   {openIndexes[sectionIndex] === questionIndex && (
                     <p className="px-6 pb-4 mt-[0] questions__answer text-[#FFFFFF] text-[16px]">{item.answer}</p>

@@ -135,7 +135,7 @@ export default function Gallery() {
       >
         <button
           onClick={closeModal}
-          className="absolute top-[20px] right-[20px] w-[42px] h-[42px] p-[0] text-[#FFFFFF] cursor-pointer border-none bg-transparent text-2xl font-bold z-10 absolute transition z-50"
+          className="absolute top-[20px] right-[26px] w-[42px] h-[42px] p-[0] text-[#FFFFFF] cursor-pointer border-none bg-transparent text-2xl font-bold z-10 absolute transition z-50"
         >
           <svg xmlns="http://www.w3.org/2000/svg" className="stroke-white transition-all duration-400 ease-in-out" viewBox="0 0 42 42" fill="none">
             <path
@@ -164,7 +164,7 @@ export default function Gallery() {
                       src={src}
                       alt={`Слайд ${index + 1}`}
                       fill
-                      className="object-contain rounded-md"
+                      className="object-cover rounded-md"
                       sizes="(max-width: 768px) 90vw, 60vw"
                       priority={index === 0}
                     />
