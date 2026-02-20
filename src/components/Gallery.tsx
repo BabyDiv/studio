@@ -112,7 +112,7 @@ export default function Gallery() {
                   />
                 </div>
                 
-                <h3 className="gallery__article-title mt-[0px] p-[32px] text-[#FFFFFF] text-[18px]">
+                <h3 className="gallery__article-title mt-[0px] min-h-[30px] p-[32px] text-[#FFFFFF] text-[18px]">
                   {gallery.title}{" "}
                   <span className="directions__name">{gallery.subtitle}</span>
                 </h3>

@@ -282,8 +282,7 @@ body {
 }
 
 .gallery__article-title {
-
-  @media(max-width: 768px) {
+  @media(min-width: 768px) {
     min-height: 60px;
   }
 }
@@ -309,7 +308,7 @@ body {
 
 @media (min-width: 768px) {
   .reviews__text {
-    max-width: 100%;
+    max-width: 70%;
   }
 
   .reviews__content {
@@ -566,3 +565,13 @@ body {
 .button-radius {
   border-radius: 32px 0;
 }
+
+/* a,
+button {
+  transition: opacity 0.6s ease;
+}
+
+a:hover,
+button:hover {
+  opacity: 0.6;
+} */

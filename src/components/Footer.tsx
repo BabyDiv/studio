@@ -15,7 +15,7 @@ export default function Footer() {
             <ul className="flex flex-col gap-[8px] pl-[0] list-none">
               <li>
                 <Link href="/" aria-label="Адрес" className="text-[#000000] flex flex-col align-start gap-[8px] no-underline">
-                  <span>Улица Маметовой, 67226, офис, 2 этаж,</span>
+                  <span>Улица Маметовой 67, 226 офис, 2 этаж</span>
                   <span> Алмалинский район, Алматы, 050004.</span>
                 </Link>
               </li>
