@@ -20,6 +20,10 @@ const galleries = [
       "/aerial-sport-6.jpg",
       "/aerial-sport-7.jpg",
       "/aerial-sport-8.jpg",
+      "/aerial-sport-9.jpg",
+      "/aerial-sport-10.jpg",
+      "/aerial-sport-11.jpg",
+      "/aerial-sport-12.jpg",
     ],
   },
   {
@@ -27,10 +31,6 @@ const galleries = [
     subtitle: "(Pole Sport)",
     cover: "/directions-pole-sport.jpg",
     slides: [
-      "/pole-sport-1.jpg",
-      "/pole-sport-2.jpg",
-      "/pole-sport-3.jpg",
-      "/pole-sport-4.jpg",
       "/pole-sport-5.jpg",
       "/pole-sport-6.jpg",
       "/pole-sport-7.jpg",
@@ -55,7 +55,6 @@ const galleries = [
       "/pole-exotic-8.jpg",
       "/pole-exotic-9.jpg",
       "/pole-exotic-10.jpg",
-      "/pole-exotic-11.jpg",
     ],
   },
 ];
@@ -112,7 +111,7 @@ export default function Gallery() {
                   />
                 </div>
                 
-                <h3 className="gallery__article-title mt-[0px] min-h-[30px] p-[32px] text-[#FFFFFF] text-[18px]">
+                <h3 className="gallery__article-title mt-[0px] p-[32px] text-[#FFFFFF] text-[18px]">
                   {gallery.title}{" "}
                   <span className="directions__name">{gallery.subtitle}</span>
                 </h3>
