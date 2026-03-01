@@ -37,7 +37,7 @@ export default function Directions() {
             <div className="relative w-full aspect-[16/11]">
               <div className="directions__blackout"></div>
               <Image
-                src="/directions-pole-sport.jpg"
+                src="/directions-pole-sport1.jpg"
                 alt="Pole Sport"
                 fill
                 className="object-cover"

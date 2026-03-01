@@ -14,7 +14,7 @@ const galleries = [
     subtitle: "(Aerial Sport)",
     cover: "/directions-silks.jpg",
     slides: [
-      "/aerial-sport-2.jpg",
+      "/aerial-sport2.jpg",
       "/aerial-sport-3.jpg",
       "/aerial-sport-4.jpg",
       "/aerial-sport-6.jpg",
@@ -22,14 +22,12 @@ const galleries = [
       "/aerial-sport-8.jpg",
       "/aerial-sport-9.jpg",
       "/aerial-sport-10.jpg",
-      "/aerial-sport-11.jpg",
-      "/aerial-sport-12.jpg",
     ],
   },
   {
     title: "Спортивный пилон",
     subtitle: "(Pole Sport)",
-    cover: "/directions-pole-sport.jpg",
+    cover: "/directions-pole-sport1.jpg",
     slides: [
       "/pole-sport-5.jpg",
       "/pole-sport-6.jpg",
