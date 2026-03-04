@@ -61,19 +61,28 @@ export default function Hero() {
 
       <motion.div
         className="hero__content relative z-20 flex flex-col justify-center items-start h-full w-full mx-[6%]"
-        variants={containerVariants}
+        variants={{
+          hidden: {},
+          visible: { transition: { staggerChildren: 0.3, delayChildren: 0.4 } },
+        }}
         initial="hidden"
         animate="visible"
       >
         <motion.h1
-          variants={itemVariants}
+          variants={{
+            hidden: { opacity: 0, y: 40 },
+            visible: { opacity: 1, y: 0, transition: { duration: 0.9, ease: 'easeOut' } },
+          }}
           className="hero__title text-[#5DBFD0] text-[48px] font-bold pb-[16px] m-0"
         >
           Студия воздушной гимнастики
         </motion.h1>
 
         <motion.p
-          variants={itemVariants}
+          variants={{
+            hidden: { opacity: 0, y: 40 },
+            visible: { opacity: 1, y: 0, transition: { duration: 0.9, ease: 'easeOut' } },
+          }}
           className="hero__text text-[16px] text-[#FFFFFF] pb-[32px] m-0 max-w-[700px]"
         >
           Приглашаем вас в Kamila Kim Studio — место, где профессионализм встречается с вдохновением.
@@ -82,14 +91,13 @@ export default function Hero() {
         </motion.p>
 
         <motion.a
-          variants={itemVariants}
+          initial={{ y: 40 }}
+          animate={{ y: 0 }}
+          transition={{ duration: 0.9, ease: 'easeOut' }}
           href="https://wa.me/77003334010"
           target="_blank"
           rel="noopener noreferrer"
-          whileHover={{
-            scale: 1.05,
-            transition: { duration: 0.3 },
-          }}
+          whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
           whileTap={{ scale: 0.97 }}
           className="
             mt-4 hero__subscribe

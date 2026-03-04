@@ -111,7 +111,7 @@ export default function Gallery() {
         {galleries.map((gallery, index) => (
           <motion.li key={index} variants={cardVariants}>
             <button onClick={() => openModal(index)} 
-              className="w-full text-left bg-transparent hover:cursor-pointer border-none"
+              className="w-full text-left px-[0] bg-transparent hover:cursor-pointer border-none"
             >
               <article className="relative gallery__article w-full overflow-hidden flex flex-col">
                 <div className="relative w-full aspect-[16/11]">
@@ -119,8 +119,7 @@ export default function Gallery() {
                   <Image
                     src={gallery.cover}
                     alt={`Галерея ${index + 1}`}
-                    width={400}
-                    height={200}
+                    fill
                     className="object-cover w-full h-full"
                     priority={index < 2}
                   />
