@@ -113,7 +113,7 @@ export default function Gallery() {
             <button onClick={() => openModal(index)} 
               className="w-full text-left px-[0] bg-transparent hover:cursor-pointer border-none"
             >
-              <article className="relative gallery__article w-full overflow-hidden flex flex-col">
+              <article className="relative gallery__article w-full h-full overflow-hidden flex flex-col">
                 <div className="relative w-full aspect-[16/11]">
                   <div className="gallery__blackout"></div>
                   <Image

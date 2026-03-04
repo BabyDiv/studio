@@ -349,6 +349,7 @@ body {
 .gallery__list {
   @media(min-width: 1064px) {
     flex-direction: row;
+    justify-content: space-between;
   }
 }
 
