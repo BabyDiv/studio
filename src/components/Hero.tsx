@@ -2,8 +2,11 @@
 
 import Image from 'next/image';
 import { motion, type Variants } from 'framer-motion';
+import { useEffect, useState } from 'react';
 
 export default function Hero() {
+
+
   const containerVariants: Variants = {
     hidden: {},
     visible: {
@@ -29,21 +32,35 @@ export default function Hero() {
     },
   };
 
+  const images = ['/bg-hero.jpg', '/teachers-kamila.png', '/teachers-victoria.jpg', '/teachers-sofia.jpg', '/teachers-elizabeth.jpg', '/teachers-alina.jpg'];
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex(prev => (prev + 1) % images.length);
+    }, 10000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <section className="hero relative z-20 w-full h-[100vh] box-border px-[8%] py-[2%] overflow-hidden">
+    <section className="hero relative z-20 w-full h-[100vh] box-border !pl-[0] py-[2%] overflow-hidden">
       
-      <Image
-        src="/bg-hero.jpg"
-        alt="Hero Background"
-        fill
-        priority
-        className="z-0 object-cover"
-      />
+      {images.map((image, index) => (
+        <motion.img
+          key={image}
+          src={image}
+          alt="Hero Background"
+          className="absolute inset-0 w-full h-full object-cover"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: index === currentIndex ? 1 : 0 }}
+          transition={{ duration: 1.5 }}
+        />
+      ))}
 
       <div className="hero__blackout absolute inset-0 z-10" />
 
       <motion.div
-        className="hero__content relative z-20 flex flex-col justify-center items-start h-full w-full"
+        className="hero__content relative z-20 flex flex-col justify-center items-start h-full w-full mx-[6%]"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
