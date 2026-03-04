@@ -119,7 +119,8 @@ export default function Gallery() {
                   <Image
                     src={gallery.cover}
                     alt={`Галерея ${index + 1}`}
-                    fill
+                    width={400}
+                    height={200}
                     className="object-cover w-full h-full"
                     priority={index < 2}
                   />
