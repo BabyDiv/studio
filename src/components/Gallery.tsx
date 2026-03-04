@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 import Modal from 'react-modal';
 import { useKeenSlider } from 'keen-slider/react';
+import { motion, type Variants } from 'framer-motion';
 import 'keen-slider/keen-slider.min.css';
 
 const galleries = [
@@ -84,15 +85,31 @@ export default function Gallery() {
   const prevSlide = () => instanceRef.current?.prev();
   const nextSlide = () => instanceRef.current?.next();
 
+  const containerVariants: Variants = {
+    hidden: {},
+    visible: { transition: { staggerChildren: 0.3 } },
+  };
+
+  const cardVariants: Variants = {
+    hidden: { opacity: 0, y: 50, scale: 0.95 },
+    visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.8, ease: 'easeOut' } },
+  };
+
   return (
     <section id="gallery" className="gallery flex flex-col px-[8%]">
       <h2 className="gallery__title text-[#5DBFD0] text-[48px] font-bold text-center">
         Галерея
       </h2>
 
-      <ul className="flex flex-col gallery__list justify-between gap-[32px] w-full list-none pl-[0px]">
+      <motion.ul
+        className="flex flex-col gallery__list gap-[32px] list-none pl-[0px]"
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+      >
         {galleries.map((gallery, index) => (
-          <li key={index} className="w-full ">
+          <motion.li key={index} variants={cardVariants}>
             <button onClick={() => openModal(index)} 
               className="w-full text-left bg-transparent hover:cursor-pointer border-none"
             >
@@ -115,9 +132,9 @@ export default function Gallery() {
                 </h3>
               </article>
             </button>
-          </li>
+          </motion.li>
         ))}
-      </ul>
+      </motion.ul>
 
       <Modal
         isOpen={modalOpen}
