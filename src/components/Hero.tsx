@@ -32,7 +32,7 @@ export default function Hero() {
     },
   };
 
-  const images = ['/bg-hero.jpg', '/teachers-kamila.jpg', '/teachers-victoria.jpg', '/teachers-sofia.jpg', '/teachers-elizabeth.jpg', '/teachers-alina.jpg'];
+  const images = ['/bg-hero.jpg', '/teachers-kamila.jpg', '/teachers-victoria2.jpg', '/teachers-sofia.jpg', '/teachers-elizabeth.jpg', '/teachers-alina2.jpg'];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {

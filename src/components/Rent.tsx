@@ -19,7 +19,7 @@ export default function Rent() {
                   видеосъёмок и мероприятий. Профессиональное освещение, зеркала и качественное воздушное оборудование.
                 </div>
                 <div className="flex justify-between py-[6px]">
-                  <span className="text-[#B0B0B0]">+ 4 человека</span>
+                  <span className="text-[#B0B0B0]">От 4 человек</span>
                   <span className="text-[#5DBFD0]">Цена договорная</span>
                 </div>
               </div>
