@@ -259,7 +259,7 @@ body {
   width: 85%;
 
   @media(min-width: 768px) {
-    margin: 0px 3%;
+    margin: 10% 3%;
     width: 48%;
   }
 }
@@ -285,6 +285,12 @@ body {
   }
 }
 
+.hero__title {
+    @media(min-width: 768px) {
+      padding-bottom: 16px;
+  }
+}
+
 .gallery__article-title {
   @media(min-width: 768px) {
     min-height: 60px;
@@ -307,6 +313,13 @@ body {
 
   @media(min-width: 1064px) {
     font-size: 18px;
+  }
+}
+
+.hero__text {
+
+  @media(min-width: 768px) {
+    padding-bottom: 32px;
   }
 }
 

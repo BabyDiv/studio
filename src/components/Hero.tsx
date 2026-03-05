@@ -32,25 +32,24 @@ export default function Hero() {
     },
   };
 
-  const images = ['/bg-hero.jpg', '/teachers-kamila.png', '/teachers-victoria.jpg', '/teachers-sofia.jpg', '/teachers-elizabeth.jpg', '/teachers-alina.jpg'];
+  const images = ['/bg-hero.jpg', '/teachers-kamila.jpg', '/teachers-victoria.jpg', '/teachers-sofia.jpg', '/teachers-elizabeth.jpg', '/teachers-alina.jpg'];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex(prev => (prev + 1) % images.length);
-    }, 10000);
+    }, 6000);
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <section className="hero relative z-20 w-full h-[100vh] box-border !pl-[0] py-[2%] overflow-hidden">
+    <section className="hero relative z-20 w-full min-h-screen box-border !pl-[0] py-[0] overflow-hidden">
       
       {images.map((image, index) => (
-        <motion.img
+        <motion.div
           key={image}
-          src={image}
-          alt="Hero Background"
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full bg-cover bg-center"
+          style={{ backgroundImage: `url(${image})` }}
           initial={{ opacity: 0 }}
           animate={{ opacity: index === currentIndex ? 1 : 0 }}
           transition={{ duration: 1.5 }}
@@ -60,7 +59,7 @@ export default function Hero() {
       <div className="hero__blackout absolute inset-0 z-10" />
 
       <motion.div
-        className="hero__content relative z-20 flex flex-col justify-center items-start h-full w-full mx-[6%]"
+        className="hero__content relative z-20 flex flex-col justify-center items-start h-full w-full mx-[6%] mt-[16%]"
         variants={{
           hidden: {},
           visible: { transition: { staggerChildren: 0.3, delayChildren: 0.4 } },
@@ -73,9 +72,9 @@ export default function Hero() {
             hidden: { opacity: 0, y: 40 },
             visible: { opacity: 1, y: 0, transition: { duration: 0.9, ease: 'easeOut' } },
           }}
-          className="hero__title text-[#5DBFD0] text-[48px] font-bold pb-[16px] m-0"
+          className="hero__title text-[#5DBFD0] leading-none text-[48px] font-bold m-0"
         >
-          Студия воздушной гимнастики
+          Студия Pole Dance и воздушной гимнастики
         </motion.h1>
 
         <motion.p
@@ -83,7 +82,7 @@ export default function Hero() {
             hidden: { opacity: 0, y: 40 },
             visible: { opacity: 1, y: 0, transition: { duration: 0.9, ease: 'easeOut' } },
           }}
-          className="hero__text text-[16px] text-[#FFFFFF] pb-[32px] m-0 max-w-[700px]"
+          className="hero__text text-[16px] text-[#FFFFFF] pb-[16px] m-0 max-w-[700px]"
         >
           Приглашаем вас в Kamila Kim Studio — место, где профессионализм встречается с вдохновением.
           Мы поможем вам найти невероятную силу и грацию в каждом движении, научиться летать и покорять высоту.

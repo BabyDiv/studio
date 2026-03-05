@@ -59,6 +59,14 @@ export default function Price() {
                 </div>
               </div>
 
+              <h3 className="mt-[32px] text-[#FFFFFF] text-[18px]">Закрытая группа</h3>
+              <div className="price__text text-[14px]">
+                <div className="flex justify-between py-[6px]">
+                  <span className="text-[#B0B0B0] font-[300] price__desc">8 занятий на месяц (1 час)</span>
+                  <span className="text-[#5DBFD0]">33.000тг</span>
+                </div>
+              </div>
+
             </div>
           </article>
         </li>
