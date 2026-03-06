@@ -34,7 +34,6 @@ const galleries = [
       "/pole-sport-6.jpg",
       "/pole-sport-7.jpg",
       "/pole-sport-8.jpg",
-      "/pole-sport-9.jpg",
       "/pole-sport-10.jpg",
       "/pole-sport-11.jpg",
     ],
